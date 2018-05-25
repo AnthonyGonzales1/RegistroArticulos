@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace RegistroArticulos
 {
-    public partial class Form1 : Form
+    public partial class MainRegistro : Form
     {
-        public Form1()
+        public MainRegistro()
         {
             InitializeComponent();
         }
