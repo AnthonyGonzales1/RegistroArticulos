@@ -1,6 +1,7 @@
 create database AticulosBD
 
 go
+use AticulosBD
 create table Articulos
 (
 	ArticuloID int primary key identity(1,1),

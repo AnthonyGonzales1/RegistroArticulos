@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ArticulosBLL.cs" />
+    <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Articulos.cs" />
     <Compile Include="MainRegistro.cs">
       <SubType>Form</SubType>
@@ -59,6 +61,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Consultas\Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\Consulta.Designer.cs">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\FormularioArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\FormularioArticulos.Designer.cs">
+      <DependentUpon>FormularioArticulos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainRegistro.resx">
       <DependentUpon>MainRegistro.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,6 +85,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Consultas\Consulta.resx">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\FormularioArticulos.resx">
+      <DependentUpon>FormularioArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -87,9 +107,6 @@
     <Content Include="DAL\Scripts\Scripts.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="UI\Consultas\" />
-    <Folder Include="UI\Registros\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

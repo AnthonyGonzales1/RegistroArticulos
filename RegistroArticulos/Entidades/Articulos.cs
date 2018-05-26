@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
 
 
 
 namespace RegistroArticulos.Entidades
-{
+{   //debe ser public para su visibilidad
     public class Articulos
-    {
-        [Key]//Llave primaria
+    {   //llave primaria
+        [Key]//Se importa  using System.ComponentModel.DataAnnotations;
 
         public int ArticuloID { get; set; }
         public DateTime FechaVC { get; set; }

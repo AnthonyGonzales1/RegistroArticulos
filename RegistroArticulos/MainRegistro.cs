@@ -15,5 +15,17 @@ namespace RegistroArticulos
         {
             InitializeComponent();
         }
+
+        private void registroArticulosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroArticulos.UI.Registros.FormularioArticulos formularioArticulos=new UI.Registros.FormularioArticulos();
+            formularioArticulos.Show();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroArticulos.UI.Consultas.Consulta consulta = new UI.Consultas.Consulta();
+            consulta.Show();
+        }
     }
 }
